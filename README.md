@@ -1,8 +1,12 @@
-# LaMa Core ML reference backup
+# LaMa Core ML backup
 
-Source, license, model card and file checksums for the Core ML model used by [FilmDevelop](https://github.com/VaderChen/FilmDevelop). This repository does **not** contain model weights or provide offline recovery of them.
+Source, license, model card and file checksums for the Core ML model used by [FilmDevelop](https://github.com/VaderChen/FilmDevelop). The complete model package, including weights, is backed up as a GitHub Release asset.
 
-## Original download source
+## Backup download
+
+Download `LaMa.mlpackage.zip` and `SHA256SUMS` from [the backup release](https://github.com/VaderChen/LaMa-CoreML/releases/tag/lama-5ed76e3). The ZIP contains the complete package with unmodified model files; only the archive packaging is new. Verify its SHA-256 before extracting.
+
+## Application download source
 
 FilmDevelop continues downloading from Hugging Face, using the pinned revision below. No GitHub Release download or fallback is configured.
 
@@ -13,6 +17,6 @@ FilmDevelop continues downloading from Hugging Face, using the pinned revision b
 - Core ML conversion credited upstream to john-rocky (Daisuke Majima).
 - License: Apache-2.0; see LICENSE and preserved UPSTREAM_MODEL_CARD.md.
 
-`SHA256SUMS` records the three original package files verified against FilmDevelop's pinned hashes. The upstream model card is preserved as historical source material; its ZIP references describe the upstream project, not assets hosted here.
+`SHA256SUMS` records the backup ZIP and the three original package files verified against FilmDevelop's pinned hashes. The upstream model card is preserved as historical source material; its ZIP references describe the upstream project, not assets hosted here.
 
-This is an independent reference backup, not a GitHub fork or an upstream-endorsed release. Large model weights are deliberately omitted.
+This is an independent backup mirror, not a GitHub fork or an upstream-endorsed release. GitHub hosts a recovery copy only; FilmDevelop continues using the original Hugging Face URLs.
