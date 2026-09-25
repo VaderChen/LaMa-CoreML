@@ -1,19 +1,18 @@
-# LaMa Core ML backup
+# LaMa Core ML reference backup
 
-Backup of the exact Core ML package used by [FilmDevelop](https://github.com/VaderChen/FilmDevelop).
+Source, license, model card and file checksums for the Core ML model used by [FilmDevelop](https://github.com/VaderChen/FilmDevelop). This repository does **not** contain model weights or provide offline recovery of them.
 
-## Download
+## Original download source
 
-Download `LaMa.mlpackage.zip` and `SHA256SUMS` from [Releases](https://github.com/VaderChen/LaMa-CoreML/releases), verify the archive with SHA-256, then unzip it. The archive contains the complete package including the 215,544,960-byte model weights. Large model files are stored as release assets, not Git LFS pointers.
+FilmDevelop continues downloading from Hugging Face, using the pinned revision below. No GitHub Release download or fallback is configured.
 
-## Provenance and license
-
-- Source: https://huggingface.co/mlboydaisuke/LaMa-CoreML
-- Pinned source revision: `5ed76e3799ab4cad31381750d29880c267477e18`
+- Model: https://huggingface.co/mlboydaisuke/LaMa-CoreML
+- Pinned revision: `5ed76e3799ab4cad31381750d29880c267477e18`
+- Package: https://huggingface.co/mlboydaisuke/LaMa-CoreML/tree/5ed76e3799ab4cad31381750d29880c267477e18/LaMa.mlpackage
 - Original research/code: https://github.com/advimman/lama
 - Core ML conversion credited upstream to john-rocky (Daisuke Majima).
-- License: Apache-2.0; see LICENSE and the preserved UPSTREAM_MODEL_CARD.md.
-- Model bytes are unmodified. Only the ZIP packaging is new; its hash differs from upstream ZIP archives.
-- This is an independent backup mirror, not a GitHub fork or an upstream-endorsed release.
+- License: Apache-2.0; see LICENSE and preserved UPSTREAM_MODEL_CARD.md.
 
-`SHA256SUMS` records the archive and each extracted package file. FilmDevelop independently checks each package file against the same pinned hashes before loading.
+`SHA256SUMS` records the three original package files verified against FilmDevelop's pinned hashes. The upstream model card is preserved as historical source material; its ZIP references describe the upstream project, not assets hosted here.
+
+This is an independent reference backup, not a GitHub fork or an upstream-endorsed release. Large model weights are deliberately omitted.
